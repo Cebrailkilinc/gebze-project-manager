@@ -4,6 +4,9 @@ import { Dropdown, Space } from 'antd';
 import { Link } from 'react-router-dom';
 
 
+
+const Navbar = ({handleClick}) => {
+    
 const items = [
     {
         key: '1',
@@ -14,7 +17,7 @@ const items = [
         ),
     },
     {
-        key: '1',
+        key: '2',
         label: (
             <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
                 YKaltesiEndeksPuaniDashboard: 
@@ -22,7 +25,7 @@ const items = [
         ),
     },
     {
-        key: '1',
+        key: '3',
         label: (
             <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
                Akıllı Şehirler Yaşam Kalitesi Puan Endeksi
@@ -30,7 +33,7 @@ const items = [
         ),
     },
     {
-        key: '1',
+        key: '4',
         label: (
             <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
                 Akıllı Şehirler Yaşam Kalitesi Genel Puan
@@ -38,7 +41,7 @@ const items = [
         ),
     },
     {
-        key: '1',
+        key: '5',
         label: (
             <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
                 Piksel_Bazli_Dashboard
@@ -46,17 +49,15 @@ const items = [
         ),
     },
     {
-        key: '1',
+        key: '6',
         label: (
-            <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+            <div onClick={handleClick} target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
                 Arsa Rayiç Değerindeki Değişimin Analizi
-            </a>
+            </div>
         ),
     },
     
 ];
-
-const Navbar = () => {
     return (
         <div className='fixed top-5 left-1/2 transform -translate-x-1/2 bg-opacity-70 z-50 flex w-11/12 items-center justify-between bg-indigo-600 px-10  rounded-md text-white'  >
            <Link to={"/"} > <div className='font-medium' >GTU</div></Link>

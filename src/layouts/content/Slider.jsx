@@ -18,15 +18,16 @@ const Slider = () => {
             <Carousel autoplay dots={false} autoplaySpeed={3000} >
                 <div>
                     <div style={contentStyle}>
-                        <img className='object-cover w-full h-full' src={slide1} />
-                        <div className='bg-red-800 z-50' >Cebrail kılınç</div>
-                    </div>
-
+                        <img className='object-cover w-full h-full' src={slide1} />                        
+                        
+                    </div>               
+                    
                 </div>
                 <div className='flex items-center justify-center'>
                     <div style={contentStyle}>
                         <img className='object-cover w-full h-full' src={slide2} />
-                    </div>
+                        <h1>asdadss</h1>
+                    </div>                    
                 </div>
                 <div>
                     <div style={contentStyle}>

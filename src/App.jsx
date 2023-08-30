@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
@@ -16,12 +16,17 @@ import AboutUs from './pages/AboutUs';
 
 function App() {
   const [count, setCount] = useState(0)
+  const ref = useRef(null);
+
+    const handleClick = () => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
   return (
     <div className='font-thin' >
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         <Route path="/aboutus" element={<AboutUs/>} />
       </Routes>
       <Footer/>
