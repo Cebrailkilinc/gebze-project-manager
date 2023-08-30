@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-dropdown-menu-item .ant-dropdown-menu-item-active .ant-dropdown-menu-item-only-child{
+    background-color: red;
+}
+.ant-dropdown-menu-item .ant-dropdown-menu-item-only-child{
+    background-color: black;
+}
