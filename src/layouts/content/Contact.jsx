@@ -1,23 +1,41 @@
 import React from 'react';
-import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
-import "leaflet/dist/leaflet.css";
+import { Button, Input } from 'antd';
+import contact from "../../assets/contactus.jpg"
 
+
+const { TextArea } = Input;
 const Contact = () => {
+   
     return (
-        <div id='things' class="max-w-6xl mx-auto py-10 font-mono flex flex-col gap-16 mt-20">
-            <h1 className='text-5xl font-bold text-gray-900 text-center lg:text-start'>Bize Ulaşın...</h1>
+        <div id='contact' class="max-w-6xl mx-auto py-10 font-mono flex flex-col gap-16 mt-20 bg-gradient-to-t from-[#F6F6F6] p-5 to-white">
+            <h1 className='text-4xl md:text-5xl font-bold text-gray-900 text-center lg:text-start'>Bize Ulaşın...</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 ' >
-                <div className='w-96 h-96'>
-                    <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
-                        <TileLayer
-                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                        />                        
-                    </MapContainer>
+                <div className='hidden md:block'>
+                    <img src={contact} />
                 </div>
-                <div>input </div>
-            </div>
+                <form className='flex flex-col gap-5' >
+                    <div className='flex items-center gap-5'>
+                        <div className='w-full'>
+                            <h1>AD :</h1>
+                            <Input placeholder="Ad" />
+                        </div>
+                        <div className='w-full'>
+                            <h1>SOYAD :</h1>
+                            <Input placeholder="Soyad" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1>EMAIL :</h1>
+                        <Input type='email' placeholder="Email..." />
+                    </div>
+                    <div>
+                        <h1>MESAJ :</h1>
+                        <TextArea   placeholder="Mesajınız..." />
+                    </div>
+                    <Button onSubmit={()=>{}} type='primary' className='text-white font-mono bg-indigo-700'  >Gönder</Button>
 
+                </form>
+            </div>
         </div>
     )
 }

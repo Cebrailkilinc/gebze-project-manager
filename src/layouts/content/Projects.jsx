@@ -54,7 +54,7 @@ const product = [
 const Projects = () => {
     return (
         <div className='max-w-6xl mx-auto py-10 font-mono flex flex-col gap-20 px-3 lg:px-0'>
-            <h1 className='text-5xl font-bold text-gray-900 text-center lg:text-start'>Çözümlerimiz</h1>
+            <h1 className='text-4xl md:text-5xl font-bold text-gray-900 text-center lg:text-start'>Projelerimiz...</h1>
             {
                 product.map((item, i) => (
                     <AnchorLink href={item.id} >

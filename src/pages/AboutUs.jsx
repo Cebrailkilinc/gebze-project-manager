@@ -1,4 +1,6 @@
 import React, { useEffect, useLayoutEffect } from 'react'
+
+//Components import  
 import TopOfPage from '../layouts/components/TopOfPage'
 
 const AboutUs = () => {

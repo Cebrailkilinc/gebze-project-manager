@@ -61,7 +61,7 @@ const Navbar = ({ handleClick }) => {
     ];
     return (
         <div className='fixed top-5 left-1/2 transform -translate-x-1/2 bg-opacity-70 z-50 flex w-11/12 items-center justify-between bg-indigo-600 px-10  rounded-md text-white'  >
-            <Link to={"/"} > <div className='font-medium' >GTU</div></Link>
+            <Link to={"/"} > <div className='font-medium ' >Gebze Teknik Üniversitesi</div></Link>
             <div className='flex lg:hidden py-5' ><MenuOutlined /></div>
 
             <div className='hidden lg:flex items-center gap-10 font-medium '>
@@ -83,6 +83,11 @@ const Navbar = ({ handleClick }) => {
                 <AnchorLink href='#things'>
                     <div className='cursor-pointer hover:bg-indigo-800 p-3 rounded-lg'>
                         Ekip
+                    </div>
+                </AnchorLink>
+                <AnchorLink href='#contact'>
+                    <div className='cursor-pointer hover:bg-indigo-800 p-3 rounded-lg'>
+                        İletişim
                     </div>
                 </AnchorLink>
                 <Link to={"/aboutus"} >
