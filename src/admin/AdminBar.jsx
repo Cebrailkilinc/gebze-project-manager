@@ -39,7 +39,7 @@ const AdminBar = () => {
     setOpen(false);
   };
   return (
-    <div className='fixed top-1/3 left-24 transform -translate-x-1/2 bg-opacity-70 z-50  w-20  bg-red-500 px-10  rounded-md text-white'>
+    <div className='fixed top-1/3 left-40 transform -translate-x-1/2 bg-opacity-70 z-50  w-20  bg-red-500 px-10  rounded-md text-white'>
       <AdminModal
         open={open}
         setOpen={setOpen}
